@@ -63,9 +63,7 @@ const Calculator= function(){
         setTheme(newTheme);
         document.body.className = newTheme;
     };
-    // const displayHistory = () => {
-    //     alert(history.join('\n'));
-    // };
+
     return (
         <div className={`flex flex-row w-[1200px] justify-center items-center`}>
             <div className={`flex flex-col items-center justify-center min-h-screen mr-[50px]`}>
@@ -143,10 +141,7 @@ const Calculator= function(){
                         text="Del"
                         callback={buttonClick}
                     ></Button>
-                    {/* <Button 
-                        text="His" 
-                        callback={displayHistory}>
-                    </Button> */}
+                  
                     <Button 
                         text="Theme"
                         callback={changeTheme}>
